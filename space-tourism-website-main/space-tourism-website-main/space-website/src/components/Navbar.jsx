@@ -64,7 +64,7 @@ const Navbar = () => {
                   href="#"
                   className="block py-2 px-3 text-white bg-white rounded md:bg-transparent
                   md:text-white md:p-0  lg:hover:border-b-4 lg:hover:border-b-white"         >
-                  01 Technology
+                  01 Destination
                 </a>
               </li>
               <li>
@@ -82,7 +82,7 @@ const Navbar = () => {
                   className="block py-2 px-3 text-white bg-white rounded md:bg-transparent
                   md:text-white md:p-0  lg:hover:border-b-4 lg:hover:border-b-white "
                 >
-                  03 Destination
+                  03 Technology
                 </a>
               </li>
               <li>
