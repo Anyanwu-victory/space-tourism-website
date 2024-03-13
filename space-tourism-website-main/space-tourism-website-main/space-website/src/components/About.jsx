@@ -13,8 +13,9 @@ const About = () => {
            because we’ll give you a truly out of this world experience!
          </p>
 
-         <div className='w-[150px] h-[150px]  rounded-full bg-white font-[bellefair] py-[4rem] '>
-           <h3 className='text-[#000000] text-center '>EXPLORE</h3>
+         <div className='w-[180px] h-[180px]  rounded-full bg-white 
+         font-[bellefair] py-[5rem] mx-[130px] my-[2rem] '>
+           <h3 className='text-[#000000] text-center text-2xl '>EXPLORE</h3>
          </div>
       </div>
 
