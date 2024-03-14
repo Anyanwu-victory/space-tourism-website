@@ -1,5 +1,5 @@
 import React from 'react'
-import {Navbar, About} from '../components'
+import {Navbar, About, Destination} from '../components'
 
 const Home = () => {
   return (
@@ -12,6 +12,10 @@ const Home = () => {
 
         <div className='m-0'>
         <About/>
+        </div>
+
+        <div className='w-full'>
+        <Destination/>
         </div>
 
     </div>
