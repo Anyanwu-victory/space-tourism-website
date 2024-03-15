@@ -1,5 +1,4 @@
 import React from 'react'
-
 import desktopbg from '../assets/home/background-home-desktop.jpg';
 import mobilebg from '../assets/home/background-home-mobile.jpg';
 import tabletbg  from '../assets/home/background-home-tablet.jpg';
