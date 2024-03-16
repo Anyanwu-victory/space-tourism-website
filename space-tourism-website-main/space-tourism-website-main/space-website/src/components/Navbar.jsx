@@ -3,6 +3,7 @@ import star from '../assets/svgs/blackstar.svg';
 import desktopbg from '../assets/home/background-home-desktop.jpg';
 import mobilebg from '../assets/home/background-home-mobile.jpg';
 import tabletbg from '../assets/home/background-home-tablet.jpg';
+import { Link , useNavigate} from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,14 +50,17 @@ const Navbar = () => {
             className={`${isMenuOpen ? 'block' : 'hidden'} w-full md:block md:w-auto bg-transparent `}
             id="navbar-hamburger"
           >
-            <ul className="font-medium bg-[rgba(0,0,0,0.6)] flex ml-[10rem] h-[50rem] flex-col p-4 items-center md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 lg:bg-[rgba(246,242,242,0.14)] lg:w-[47rem] lg:mx-[-9rem] lg:py-[1.5rem] lg:px-[5rem]">
+            <ul className="font-medium bg-[rgba(0,0,0,0.6)] flex ml-[10rem]
+             h-[50rem] flex-col p-4 items-center md:p-0 mt-4 
+             md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 
+             lg:bg-[rgba(246,242,242,0.14)] lg:w-[47rem] lg:h-[5rem] lg:mx-[-9rem] lg:py-[1.5rem] lg:px-[5rem]">
               <li className="">
                 <a
                   href="#"
                   className="block py-2 px-3 text-white rounded md:bg-transparent md:text-white md:p-0 lg:text-white lg:hover:border-b-4 border-spacing-y-[20px] border-b-white"
                   aria-current="page"
                 >
-                  00 Home
+                <Link to='/'>00 Home</Link>
                 </a>
               </li>
               <li
@@ -81,22 +85,22 @@ const Navbar = () => {
                       <hr className="pb-3 mt-2 mx-2" />
                       <li className="px-4 py-2 hover:bg-[#f9d1d123]">
                         <a href="#" className="text-white">
-                          Moon
+                          <Link to='/moon' >Moon </Link>
                         </a>
                       </li>
                       <li className="px-4 py-2 hover:bg-[#f9d1d123]">
                         <a href="#" className="text-white">
-                          Mars
+                         <Link to='/mars'>Mars</Link>
                         </a>
                       </li>
                       <li className="px-4 py-2 hover:bg-[#f9d1d123]">
                         <a href="#" className="text-white">
-                          Europa
+                         <Link to='/europa' >Europa</Link>
                         </a>
                       </li>
                       <li className="px-4 py-2 hover:bg-[#f9d1d123]">
                         <a href="#" className="text-white">
-                          Titan
+                          <Link to='/titan'>Titan</Link>
                         </a>
                       </li>
                     </ul>
