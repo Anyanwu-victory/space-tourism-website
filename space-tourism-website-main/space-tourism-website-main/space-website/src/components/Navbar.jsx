@@ -8,9 +8,24 @@ import { Link , useNavigate} from "react-router-dom";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isDestinationOpen, setIsDestinationOpen] = useState(false);
+  const [isCrewOpen, setIsCrewOpen] = useState(false);
+  const [isTechnologyOpen, setIsTechnologyOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleDestination = () => {
+    setIsDestinationOpen(!isDestinationOpen);
+  };
+
+  const toggleCrew = () => {
+    setIsCrewOpen(!isCrewOpen);
+  };
+
+  const toggleTechnology = () => {
+    setIsTechnologyOpen(!isTechnologyOpen);
   };
 
   const toggleDropdown = () => {
@@ -66,8 +81,8 @@ const Navbar = () => {
 
               {/* Destination */}
               <li
-                onMouseEnter={toggleDropdown}
-                onMouseLeave={toggleDropdown}
+                onMouseEnter={toggleDestination}
+                onMouseLeave={toggleDestination}
                 className="relative"
               >
                 <a
@@ -77,7 +92,7 @@ const Navbar = () => {
                   01 Destination
                 </a>
                 {/* Dropdown */}
-                {isDropdownOpen && (
+                {isDestinationOpen && (
                   <div className="absolute z-10 text-white top-full left-0 w-[130%] md:left-auto md:top-auto md:w-auto
                    bg-[#000000] rounded-lg shadow-md mt-1 md:mt-0 lg:w-[150%]">
                     <ul className="py-2">
@@ -113,7 +128,8 @@ const Navbar = () => {
               </li>
               {/* crew */}
               <li
-              
+              onMouseEnter={toggleCrew}
+              onMouseLeave={toggleCrew}
               className="relative">
                 <a
                   href="#"
@@ -122,9 +138,9 @@ const Navbar = () => {
                   02 Crew
                 </a>
                 {/* DropDown */}
-                {isDropdownOpen && (
+                {isCrewOpen && (
                   <div className="absolute z-10 text-white top-full left-0 w-[130%] md:left-auto md:top-auto md:w-auto
-                   bg-[#000000] rounded-lg shadow-md mt-1 md:mt-0 lg:w-[150%]">
+                   bg-[#000000] rounded-lg shadow-md mt-1 md:mt-0 lg:w-[350%]">
                     <ul className="py-2">
                       <li className="px-4 py-2">
                         <a href="#" className="text-white">
@@ -159,7 +175,8 @@ const Navbar = () => {
 
                  {/* Technology */}
               <li
-              
+               onMouseEnter={toggleTechnology}
+               onMouseLeave={toggleTechnology}
               >
                 <a
                  
@@ -170,10 +187,10 @@ const Navbar = () => {
                   03 Technology
                 </a>
                 {/* Dropdrow */}
-                {isDropdownOpen && (
+                {isTechnologyOpen && (
                   <div className="absolute z-10 text-white top-full left-0 w-[130%]
                    md:left-auto md:top-auto md:w-auto
-                   bg-[#000000] rounded-lg shadow-md mt-1 md:mt-0 lg:w-[50%]">
+                   bg-[#000000] rounded-lg shadow-md mt-1 md:mt-0 lg:w-[20%]">
                     <ul className="py-2">
                       <li className="px-4 py-2">
                         <a href="#" className="text-white">
