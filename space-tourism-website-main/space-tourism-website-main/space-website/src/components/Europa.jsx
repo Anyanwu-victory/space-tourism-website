@@ -38,7 +38,8 @@ const Europa = () => {
             </div>
           ))}
         </div>
-        <div className="absolute z-30 flex justify-center space-x-6 rtl:space-x-reverse bottom-10 left-1/2 -translate-x-1/2">
+        <div className="absolute z-30 flex justify-center space-x-6 rtl:space-x-reverse 
+        bottom-10 left-1/2 -translate-x-1/2">
           {[...Array(4).keys()].map((index) => (
             <button
               key={index}

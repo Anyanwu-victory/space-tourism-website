@@ -42,8 +42,8 @@ const Feed = mapDataToArray(SpaceData);
           {Feed.map((slide, index) => (
             <div key={index} className="w-full h-full  top-0 left-0" style={{ transform: 
             `translateX(${index * 100}%)` }}>
-              <img src={slide[0].images.webp} className="
-               block w-[200px] h-[200px] object-cover" alt={slide[0].travel} />
+              <img src={moon} className="
+               block w-[200px] h-[200px] object-cover" alt={slide[0].name} />
 
              
             </div>

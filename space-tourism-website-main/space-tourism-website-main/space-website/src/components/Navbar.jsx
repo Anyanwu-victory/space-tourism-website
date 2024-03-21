@@ -63,6 +63,8 @@ const Navbar = () => {
                 <Link to='/'>00 Home</Link>
                 </a>
               </li>
+
+              {/* Destination */}
               <li
                 onMouseEnter={toggleDropdown}
                 onMouseLeave={toggleDropdown}
@@ -74,8 +76,10 @@ const Navbar = () => {
                 >
                   01 Destination
                 </a>
+                {/* Dropdown */}
                 {isDropdownOpen && (
-                  <div className="absolute z-10 text-white top-full left-0 w-[130%] md:left-auto md:top-auto md:w-auto bg-[#000000] rounded-lg shadow-md mt-1 md:mt-0">
+                  <div className="absolute z-10 text-white top-full left-0 w-[130%] md:left-auto md:top-auto md:w-auto
+                   bg-[#000000] rounded-lg shadow-md mt-1 md:mt-0 lg:w-[150%]">
                     <ul className="py-2">
                       <li className="px-4 py-2">
                         <a href="#" className="text-white">
@@ -107,21 +111,99 @@ const Navbar = () => {
                   </div>
                 )}
               </li>
-              <li>
+              {/* crew */}
+              <li
+              
+              className="relative">
                 <a
                   href="#"
                   className="block py-2 px-3 text-white rounded md:bg-transparent md:text-white md:p-0 lg:hover:border-b-4 lg:hover:border-b-white"
                 >
                   02 Crew
                 </a>
+                {/* DropDown */}
+                {isDropdownOpen && (
+                  <div className="absolute z-10 text-white top-full left-0 w-[130%] md:left-auto md:top-auto md:w-auto
+                   bg-[#000000] rounded-lg shadow-md mt-1 md:mt-0 lg:w-[150%]">
+                    <ul className="py-2">
+                      <li className="px-4 py-2">
+                        <a href="#" className="text-white">
+                          Pick a Location
+                        </a>
+                      </li>
+                      <hr className="pb-3 mt-2 mx-2" />
+                      <li className="px-4 py-2 hover:bg-[#f9d1d123]">
+                        <a href="#" className="text-white">
+                          <Link to='/moon' >Moon </Link>
+                        </a>
+                      </li>
+                      <li className="px-4 py-2 hover:bg-[#f9d1d123]">
+                        <a href="#" className="text-white">
+                         <Link to='/mars'>Mars</Link>
+                        </a>
+                      </li>
+                      <li className="px-4 py-2 hover:bg-[#f9d1d123]">
+                        <a href="#" className="text-white">
+                         <Link to='/europa' >Europa</Link>
+                        </a>
+                      </li>
+                      <li className="px-4 py-2 hover:bg-[#f9d1d123]">
+                        <a href="#" className="text-white">
+                          <Link to='/titan'>Titan</Link>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                )}
               </li>
-              <li>
+
+                 {/* Technology */}
+              <li
+              
+              >
                 <a
+                 
                   href="#"
-                  className="block py-2 px-3 text-white rounded md:bg-transparent md:text-white md:p-0 lg:hover:border-b-4 lg:hover:border-b-white"
+                  className="block py-2 px-3 text-white rounded md:bg-transparent md:text-white
+                   md:p-0 lg:hover:border-b-4 lg:hover:border-b-white"
                 >
                   03 Technology
                 </a>
+                {/* Dropdrow */}
+                {isDropdownOpen && (
+                  <div className="absolute z-10 text-white top-full left-0 w-[130%]
+                   md:left-auto md:top-auto md:w-auto
+                   bg-[#000000] rounded-lg shadow-md mt-1 md:mt-0 lg:w-[50%]">
+                    <ul className="py-2">
+                      <li className="px-4 py-2">
+                        <a href="#" className="text-white">
+                          Pick a Location
+                        </a>
+                      </li>
+                      <hr className="pb-3 mt-2 mx-2" />
+                      <li className="px-4 py-2 hover:bg-[#f9d1d123]">
+                        <a href="#" className="text-white">
+                          <Link to='/moon' >Moon </Link>
+                        </a>
+                      </li>
+                      <li className="px-4 py-2 hover:bg-[#f9d1d123]">
+                        <a href="#" className="text-white">
+                         <Link to='/mars'>Mars</Link>
+                        </a>
+                      </li>
+                      <li className="px-4 py-2 hover:bg-[#f9d1d123]">
+                        <a href="#" className="text-white">
+                         <Link to='/europa' >Europa</Link>
+                        </a>
+                      </li>
+                      <li className="px-4 py-2 hover:bg-[#f9d1d123]">
+                        <a href="#" className="text-white">
+                          <Link to='/titan'>Titan</Link>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                )}
               </li>
               <li>
                 <a
