@@ -35,8 +35,9 @@ const About = () => {
           </h1>
 
           <p
-            className="font-[barlow] text-[20px] text-center leading-[32px] mx-[2rem] font-thin pt-[15px] 
-             lg:text-start lg:pr-[35rem]"
+            className="font-[barlow] text-[20px] text-center leading-[32px] mx-[2rem]
+             font-thin pt-[15px] 
+             lg:text-start lg:pr-[32rem]"
           >
             Let’s face it; if you want to go to space, you might as well
             genuinely go to outer space and not hover kind of on the edge of it.
