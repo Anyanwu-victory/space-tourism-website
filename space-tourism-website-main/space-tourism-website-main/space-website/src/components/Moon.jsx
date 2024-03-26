@@ -19,9 +19,7 @@ function mapDataToArray(data) {
   }
 }
 
-const Feed = mapDataToArray(SpaceData);
-
-
+    const Feed = mapDataToArray(SpaceData);
     const [currentSlide, setCurrentSlide] = useState(0);
   
     useEffect(() => {
@@ -43,9 +41,7 @@ const Feed = mapDataToArray(SpaceData);
             <div key={index} className="w-full h-full  top-0 left-0" style={{ transform: 
             `translateX(${index * 100}%)` }}>
               <img src={moon} className="
-               block w-[200px] h-[200px] object-cover" alt={slide[0].name} />
-
-             
+               block w-[200px] h-[200px] object-cover lg:w-[400px] lg:h-[400px] lg:ml-[7rem] lg:mt-[3rem] lg:mr-[9rem]" alt={slide[0].name} />             
             </div>
           ))}
         </div>
@@ -63,30 +59,34 @@ const Feed = mapDataToArray(SpaceData);
 
       </div>
       
-      <div className='text-white  mt-[-16px]'>
-        <h1 className=" text-white text-center text-[90px] font-[bellefair] text-400 uppercase ">MOON </h1>
+      <div className='text-white  mt-[-16px] lg:text-start lg:mx-[5rem] '>
+        <h1 className=" text-white text-center text-[90px] font-[bellefair] 
+        text-400 uppercase  lg:text-start lg:pl-[5rem]">MOON </h1>
         <p className="font-[barlow] text-[20px] text-center 
-        leading-[32px] mx-[2rem] font-thin pt-[-20px]">
+        leading-[32px] mx-[2rem] font-thin pt-[-20px] lg:text-start lg:mx-[5.5rem] ">
         See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
         regain perspective and come back refreshed. While you’re there, take in some history 
         by visiting the Luna 2 and Apollo 11 landing sites.
       
         </p>
 
-        <hr className='my-[3rem] mx-[2.5rem] fill-[#383B4B] text-[#383B4B] h-3 '/>
-
-        <p className="font-[bellefair] text-[50px] text-center 
-        leading-[32px] mx-[2rem]  pt-[20px] uppercase">
+        <hr className='my-[3rem] mx-[2.5rem] fill-[#383B4B] text-[#383B4B] 
+        h-3 lg:text-start lg:mx-[5rem]'/>
+      
+       <div className='lg:text-start lg:flex'> 
+         
+          <p className="font-[bellefair] text-[50px] text-center 
+           leading-[32px] mx-[2rem]  pt-[20px] uppercase">
           384,400 KM
-        </p> 
+          </p> 
 
         
-        <p className="font-[bellefair] text-[50px] text-center 
-        leading-[32px] mx-[2rem]  pt-[120px] uppercase">
+          <p className="font-[bellefair] text-[50px] text-center 
+          leading-[32px] mx-[2rem]  pt-[120px] uppercase lg:pt-0">
           3  days
-        </p> 
-
-    </div>
+          </p> 
+        </div>
+      </div>
 </>
 
     );
@@ -104,7 +104,7 @@ const Moon = ({data}) => {
       </div>
 
       <div className='max-h-screen max-w-full relative flex justify-center  '>
-        <div className='absolute pt-[190px]' >
+        <div className='absolute pt-[190px] lg:flex' >
         <Carousel />
         </div>
         

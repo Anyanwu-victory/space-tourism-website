@@ -222,14 +222,6 @@ const Navbar = () => {
                   </div>
                 )}
               </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 px-3 text-white rounded md:bg-transparent md:text-white md:p-0 lg:hover:border-b-4 lg:hover:border-b-white"
-                >
-                  <span className="">04</span> Shared
-                </a>
-              </li>
             </ul>
           </div>
         </div>
