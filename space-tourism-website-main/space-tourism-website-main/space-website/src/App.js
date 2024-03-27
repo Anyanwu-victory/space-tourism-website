@@ -5,7 +5,7 @@ import { Moon } from "./components";
 import { Mars } from "./components";
 import { Europa } from "./components";
 import { Titan } from "./components";
-
+import {Commander} from "./components"
 
 
 const App = () => {
@@ -20,6 +20,7 @@ const App = () => {
           <Route path="mars" element={<Mars/>}/>
           <Route path="europa" element={<Europa/>}/>
           <Route path="titan" element={<Titan/>}/>
+          <Route path="commander" element={<Commander/>}/>
        </Routes>
 
 

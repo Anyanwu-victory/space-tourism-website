@@ -144,28 +144,28 @@ const Navbar = () => {
                     <ul className="py-2">
                       <li className="px-4 py-2">
                         <a href="#" className="text-white">
-                          Pick a Location
+                          Crew Members
                         </a>
                       </li>
                       <hr className="pb-3 mt-2 mx-2" />
                       <li className="px-4 py-2 hover:bg-[#f9d1d123]">
                         <a href="#" className="text-white">
-                          <Link to='/moon' >Moon </Link>
+                          <Link to='/commander' >Crew A </Link>
                         </a>
                       </li>
                       <li className="px-4 py-2 hover:bg-[#f9d1d123]">
                         <a href="#" className="text-white">
-                         <Link to='/mars'>Mars</Link>
+                         <Link to='/mars'>Crew B</Link>
                         </a>
                       </li>
                       <li className="px-4 py-2 hover:bg-[#f9d1d123]">
                         <a href="#" className="text-white">
-                         <Link to='/europa' >Europa</Link>
+                         <Link to='/europa' >Crew C</Link>
                         </a>
                       </li>
                       <li className="px-4 py-2 hover:bg-[#f9d1d123]">
                         <a href="#" className="text-white">
-                          <Link to='/titan'>Titan</Link>
+                          <Link to='/titan'>Crew D</Link>
                         </a>
                       </li>
                     </ul>
