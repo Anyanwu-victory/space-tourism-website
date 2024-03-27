@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react'
-
+import SpaceData  from '../db/data.json'
 
 
   const  Carousel = ()  => { 
