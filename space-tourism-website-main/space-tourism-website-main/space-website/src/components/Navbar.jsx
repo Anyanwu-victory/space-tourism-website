@@ -139,12 +139,12 @@ const Navbar = () => {
                 </a>
                 {/* DropDown */}
                 {isCrewOpen && (
-                  <div className="absolute z-10 text-white top-full left-0 w-[130%] md:left-auto md:top-auto md:w-auto
+                  <div className="absolute z-10 text-white top-full left-0 w-[200%] md:left-auto md:top-auto md:w-auto
                    bg-[#000000] rounded-lg shadow-md mt-1 md:mt-0 lg:w-[350%]">
                     <ul className="py-2">
                       <li className="px-4 py-2">
                         <a href="#" className="text-white">
-                          Crew Members
+                          Meet Your Crew Members
                         </a>
                       </li>
                       <hr className="pb-3 mt-2 mx-2" />
