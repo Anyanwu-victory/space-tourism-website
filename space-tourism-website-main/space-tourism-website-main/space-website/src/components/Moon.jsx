@@ -21,16 +21,6 @@ function mapDataToArray(data) {
 
     const Feed = mapDataToArray(SpaceData);
     const [currentSlide, setCurrentSlide] = useState(0);
-  
-    useEffect(() => {
-      const interval = setInterval(() => {
-        setCurrentSlide((prevSlide) => (prevSlide + 1) % 4); // Change 5 to the total number of slides
-      }, 2000); // Change the interval time as needed
-  
-      return () => clearInterval(interval);
-    }, []);
-    console.log(Feed)
-
    
     return (
 <>
@@ -79,7 +69,7 @@ function mapDataToArray(data) {
         text-400 uppercase  lg:text-start lg:pl-[5rem]">MOON </h1>
         <p className="font-[barlow] text-[2,kl0px] text-center 
         leading-[32px] mx-[2rem] font-thin pt-[-20px]
-         lg:text-[22px] lg:text-start lg:mx-[5.5rem] ">
+         lg:text-[22px] lg:text-start lg:mx-[5rem] ">
         See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
         regain perspective and come back refreshed. While you’re there, take in some history 
         by visiting the Luna 2 and Apollo 11 landing sites.

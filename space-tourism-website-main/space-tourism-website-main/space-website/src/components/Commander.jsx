@@ -11,14 +11,14 @@ const Commander = () => {
     
   return (
     <>
-      <div className=" text-white">
+      <div className=" text-white overflow-hidden">
         <div>
           <Navbar />
         </div>
 
         <div className="h-screen max-w-full relative flex justify-center ">
           <div className="absolute mt-[7rem] text-center lg:flex">
-            <div className="mx-[8rem] md:mt-[3.9rem] lg:hidden md:hidden">
+            <div className="mx-[8.9rem] md:mt-[3.9rem] lg:hidden md:hidden">
               <img src={douglas} className=" h-[19rem] " alt="Douglas" />
             </div>
             <hr className="mx-[1.5rem] fill-[#D0D6F9] mb-[2rem]" />

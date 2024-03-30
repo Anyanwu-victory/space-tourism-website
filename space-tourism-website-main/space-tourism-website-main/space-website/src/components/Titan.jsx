@@ -23,16 +23,8 @@ const  Carousel = ()  => {
   }
   
       const Feed = mapDataToArray(SpaceData);
-      const [currentSlide, setCurrentSlide] = useState(0);
-    
-      useEffect(() => {
-        const interval = setInterval(() => {
-          setCurrentSlide((prevSlide) => (prevSlide + 1) % 4); // Change 5 to the total number of slides
-        }, 2000); // Change the interval time as needed
-    
-        return () => clearInterval(interval);
-      }, []);
-      console.log(Feed)
+      const [currentSlide, setCurrentSlide] = useState(3);
+
   
      
       return (
