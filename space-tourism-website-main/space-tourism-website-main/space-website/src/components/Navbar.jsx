@@ -155,7 +155,7 @@ const Navbar = () => {
                       </li>
                       <li className="px-4 py-2 hover:bg-[#f9d1d123]">
                         <a href="#" className="text-white">
-                         <Link to='/mars'>Crew B</Link>
+                         <Link to='/specialist'>Crew B</Link>
                         </a>
                       </li>
                       <li className="px-4 py-2 hover:bg-[#f9d1d123]">
