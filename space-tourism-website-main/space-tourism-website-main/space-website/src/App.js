@@ -7,6 +7,8 @@ import { Europa } from "./components";
 import { Titan } from "./components";
 import {Commander} from "./components";
 import {Specialist} from "./components";
+import {Pliot} from "./components";
+import {Engineer} from "./components";
 
 
 const App = () => {
@@ -23,7 +25,8 @@ const App = () => {
           <Route path="titan" element={<Titan/>}/>
           <Route path="commander" element={<Commander/>}/>
           <Route path="specialist" element={<Specialist/>}/>
-
+          <Route path="pliot" element={<Pliot/>}/>
+          <Route path="engineer" element={<Engineer/>}/>
        </Routes>
 
 

@@ -6,4 +6,6 @@ export {default as Mars} from './Mars';
 export {default as Europa} from './Europa';
 export {default as Titan} from './Titan';
 export {default as Commander} from './Commander';
-export {default as Specialist} from './Specialist'
+export {default as Specialist} from './Specialist';
+export {default as Pliot} from './Pliot';
+export {default as Engineer} from './Engineer';

@@ -150,22 +150,22 @@ const Navbar = () => {
                       <hr className="pb-3 mt-2 mx-2" />
                       <li className="px-4 py-2 hover:bg-[#f9d1d123]">
                         <a href="#" className="text-white">
-                          <Link to='/commander' >Crew A </Link>
+                          <Link to='/commander' >Commander </Link>
                         </a>
                       </li>
                       <li className="px-4 py-2 hover:bg-[#f9d1d123]">
                         <a href="#" className="text-white">
-                         <Link to='/specialist'>Crew B</Link>
+                         <Link to='/specialist'>Specialist</Link>
                         </a>
                       </li>
                       <li className="px-4 py-2 hover:bg-[#f9d1d123]">
                         <a href="#" className="text-white">
-                         <Link to='/europa' >Crew C</Link>
+                         <Link to='/pliot' >Pliot</Link>
                         </a>
                       </li>
                       <li className="px-4 py-2 hover:bg-[#f9d1d123]">
                         <a href="#" className="text-white">
-                          <Link to='/titan'>Crew D</Link>
+                          <Link to='/engineer'>Flight Engineer</Link>
                         </a>
                       </li>
                     </ul>
