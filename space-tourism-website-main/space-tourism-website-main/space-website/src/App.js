@@ -9,6 +9,7 @@ import {Commander} from "./components";
 import {Specialist} from "./components";
 import {Pliot} from "./components";
 import {Engineer} from "./components";
+import {Vehicle} from "./components";
 
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="specialist" element={<Specialist/>}/>
           <Route path="pliot" element={<Pliot/>}/>
           <Route path="engineer" element={<Engineer/>}/>
+          <Route path="vehicle" element={<Vehicle/>}/>
        </Routes>
 
 

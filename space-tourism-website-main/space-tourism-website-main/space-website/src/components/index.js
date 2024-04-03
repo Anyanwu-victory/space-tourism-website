@@ -9,3 +9,4 @@ export {default as Commander} from './Commander';
 export {default as Specialist} from './Specialist';
 export {default as Pliot} from './Pliot';
 export {default as Engineer} from './Engineer';
+export {default as Vehicle} from './Vehicle'

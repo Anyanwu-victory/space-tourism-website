@@ -63,7 +63,7 @@ const Commander = () => {
                  <button
                     key={index}
                      type="button"
-                     className={`w-3 h-3 rounded-full lg:ml-[-40rem]  ${currentSlide === index ? 'bg-[#E5E6E8] w-3 h-3' : 'bg-[#979797]'}`}
+                     className={`w-3 h-3 rounded-full lg:ml-[-40rem]  ${currentSlide === index ? 'bg-[#ffffff] w-3 h-3' : 'bg-[#979797]'}`}
                     aria-current={currentSlide === index ? 'true' : 'false'}
                     aria-label={`Slide ${index + 1}`}
                   />

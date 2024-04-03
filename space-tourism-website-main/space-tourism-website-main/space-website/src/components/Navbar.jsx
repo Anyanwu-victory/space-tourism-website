@@ -194,13 +194,13 @@ const Navbar = () => {
                     <ul className="py-2">
                       <li className="px-4 py-2">
                         <a href="#" className="text-white">
-                          Pick a Location
+                          Technology
                         </a>
                       </li>
                       <hr className="pb-3 mt-2 mx-2" />
                       <li className="px-4 py-2 hover:bg-[#f9d1d123]">
                         <a href="#" className="text-white">
-                          <Link to='/moon' >Moon </Link>
+                          <Link to='/vehicle' >Space Vehicle </Link>
                         </a>
                       </li>
                       <li className="px-4 py-2 hover:bg-[#f9d1d123]">
