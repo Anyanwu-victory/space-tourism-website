@@ -42,14 +42,14 @@ const Vehicle = () => {
                 </div>
                 {/* for Laptop design - div */}
                 <div className='lg:flex'>
-                  <div className=''>
+                  <div className='lg:-mt-[4rem] lg:w-[756px] lg:ml-[4rem]'>
                      
                 <h1 className="mb-[1rem] font-[bellefair] uppercase text-[34px] lg:ml-[13rem]">
                    launch vehicle
                 </h1>
                 <p className="font-[barlow] text-[#D0D6F9] text-[20px] leading-[30px] 
                 px-[42px] mt-[8px] lg:mt-[20px] lg:text-balance
-                lg:ml-[9rem] lg:justify-center lg:overflow-hidden lg:w-[626px] ">
+                lg:ml-[10rem] lg:justify-center lg:overflow-hidden  ">
   
                      A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
                      payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
@@ -59,22 +59,23 @@ const Vehicle = () => {
                   </div>
                  
                  {/* circles laptop */}
-                <div className="pb-[3rem] mt-[5rem]   hidden lg:block">
-                       <div className="absolute z-30 flex flex-col   space-x-6
-                        rtl:space-x-reverse 
-                        left-1/2 -translate-x-1/2 mb-[3rem]  lg:block">
-                       {[...Array(3).keys()].map((index) => (
-                   <button
-                      key={index}
-                       type="button"
-                       className={`w-16 h-16 text-2xl rounded-full lg:ml-[-40rem] ${currentSlide === index ? 'bg-[#E5E6E8] text-black' : 'bg-[#979797] text-white'}`}
-                      aria-current={currentSlide === index ? 'true' : 'false'}
-                      value={index}
-                      aria-label={`Slide ${index + 1}`}
-                    > {index + 1} </button>
-                      ))}
-                    </div>
-                </div>
+                 <div className="pb-[3rem] mt-[5rem] hidden lg:block">
+                     <div className="absolute z-30 flex flex-col space-y-6 
+                     rtl:space-x-reverse left-1/2 -translate-x-1/2 mb-[3rem] 
+                     lg:translate-y-1/2 lg:space-y-6 lg:-mt-[16rem] lg:-ml-[39rem] lg:rtl:space-y-reverse">
+                      {[...Array(3).keys()].map((index) => (
+                        <button
+                          key={index}
+                          type="button"
+                          className={`w-16 h-16 text-2xl rounded-full ${currentSlide === index ? 'bg-[#E5E6E8] text-black border border-white' : 'bg-transparent text-white border border-white'}`}
+                          aria-current={currentSlide === index ? 'true' : 'false'}
+                          value={index}
+                          aria-label={`Slide ${index + 1}`}
+                     > {index + 1} </button>
+                        ))}
+                     </div>
+                  </div>
+
                 {/* Laptop circles end here  */}
 
                 </div>
@@ -82,7 +83,7 @@ const Vehicle = () => {
                  
               <div className=" md:mt-[3.9rem] hidden lg:mt-[4rem] lg:block md:block ">
                 <img src={vehicle1} className=" h-[23rem] lg:h-[30rem] 
-                lg:w-[40rem] lg:ml-[9rem] object-fill justify-center" alt="Douglas" />
+                lg:w-[40rem] lg:ml-[8rem] object-fill justify-center" alt="Douglas" />
               </div>
             </div>
   
