@@ -35,7 +35,7 @@ const About = () => {
           </h1>
 
           <p
-            className="font-[barlow] text-[20px] text-center leading-[32px] mx-[2rem]
+            className="font-[barlow] text-[20px] text-center leading-[38px] mx-[2rem]
              font-thin pt-[15px] 
              lg:text-start lg:pr-[32rem]"
           >

@@ -104,7 +104,7 @@ const Navbar = () => {
                 {/* Dropdown */}
                 {isDestinationOpen && (
                   <div className="absolute z-10 text-black top-full left-0 w-[130%]
-                   md:left-auto md:top-auto md:w-auto bg-black
+                   md:left-auto md:top-auto md:w-auto bg-black 
                    lg:bg-transparent rounded-lg shadow-lg mt-1 md:mt-5 lg:w-[150%]">
                     <ul className="py-2">
                       <li className="px-4 py-2">
@@ -202,7 +202,7 @@ const Navbar = () => {
                onMouseLeave={toggleTechnology}
                > 
               <li
-               
+               className="relative"
               >
                 <a
                  
@@ -216,7 +216,7 @@ const Navbar = () => {
                 {isTechnologyOpen && (
                   <div className="absolute z-10 text-white top-full left-0 w-[130%]
                    md:left-auto md:top-auto md:w-auto
-                   bg-[#000000] lg:bg-transparent rounded-lg shadow-xl mt-1 md:mt-5 lg:w-[20%]">
+                   bg-[#000000] lg:bg-transparent rounded-lg shadow-xl mt-1 md:mt-5 lg:w-[150%]">
                     <ul className="py-2">
                       <li className="px-4 py-2">
                         <a href="#" className="text-white">
@@ -224,7 +224,7 @@ const Navbar = () => {
                         </a>
                       </li>
                       <hr className="pb-3 mt-2 mx-2" />
-                      <li className="px-4 py-2 hover:bg-[#f9d1d123]">
+                      <li className="px-4 py-2 hover:bg-[#a4949423]">
                         <a href="#" className="text-white">
                           <Link to='/vehicle' >Space Vehicle </Link>
                         </a>
@@ -234,8 +234,8 @@ const Navbar = () => {
                          <Link to='/port'>SpacePort</Link>
                         </a>
                       </li>
-                      <li className="px-4 py-2 hover:bg-[#f9d1d123]">
-                        <a href="#" className="text-">
+                      <li className="px-4 py-2 hover:bg-[#f9d1d123] ">
+                        <a href="#" className="text-white">
                          <Link to='/Capsule' >Space Capsule</Link>
                         </a>
                       </li>
