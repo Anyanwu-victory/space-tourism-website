@@ -1,13 +1,13 @@
 import React,{useState,useEffect} from 'react';
-import vehicle from '../assets/technology/image-launch-vehicle-landscape.jpg';
-import vehicle1 from '../assets/technology/image-launch-vehicle-portrait.jpg';
+import vehicle from '../assets/technology/image-space-capsule-landscape.jpg';
+import vehicle1 from '../assets/technology/image-space-capsule-portrait.jpg';
 import Navbar from "./Navbar";
 import desktopbg from "../assets/technology/background-technology-desktop.jpg";
 import mobilebg from "../assets/technology/background-technology-mobile.jpg";
 import tabletbg from "../assets/technology/background-technology-tablet.jpg";
 
-const Vehicle = () => {
-    const [currentSlide, setCurrentSlide] = useState(0);
+const Capsule = () => {
+    const [currentSlide, setCurrentSlide] = useState(2);
     
     return (
       <>
@@ -19,7 +19,7 @@ const Vehicle = () => {
           <div className="h-screen max-w-full relative flex justify-center ">
             <div className="absolute mt-[7rem] text-center lg:flex">
               <div className=" md:mt-[3.9rem] lg:hidden md:hidden">
-                <img src={vehicle} className=" h-[17rem] w-[100%] object-cover " alt="launch vehicle" />
+                <img src={vehicle} className=" h-[17rem] w-[100%]  object-fill " alt="launch vehicle" />
               </div>
   
               <div className="lg:mt-[9rem] lg:text-start ">
@@ -45,16 +45,16 @@ const Vehicle = () => {
                   <div className='lg:-mt-[4rem] lg:w-[756px] lg:ml-[4rem]'>
                      
                 <h1 className="mb-[1rem] font-[bellefair] uppercase text-[34px] lg:ml-[13rem]">
-                   launch vehicle
+                   Space Capsule
                 </h1>
                 <p className="font-[barlow] text-[#D0D6F9] text-[20px] leading-[30px] 
                 px-[42px] mt-[8px] lg:mt-[20px] lg:text-balance
                 lg:ml-[10rem] lg:justify-center lg:overflow-hidden  ">
   
-                     A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
-                     payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
-                     WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
-                    it's quite an awe-inspiring sight on the launch pad!
+  A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
+  capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
+  you'll spend your time during the flight. It includes a space gym, cinema, 
+  and plenty of other activities to keep you entertained.
                 </p>
                   </div>
                  
@@ -83,7 +83,7 @@ const Vehicle = () => {
                  
               <div className=" md:mt-[3.9rem] hidden lg:mt-[4rem] lg:block md:block ">
                 <img src={vehicle1} className=" h-[23rem] lg:h-[30rem] 
-                lg:w-[40rem] lg:ml-[7rem] object-fill justify-center" alt="Douglas" />
+                lg:w-[40rem] lg:ml-[5rem] object-cover justify-center" alt="Douglas" />
               </div>
             </div>
   
@@ -108,4 +108,4 @@ const Vehicle = () => {
     );
 }
 
-export default Vehicle;
+export default Capsule;

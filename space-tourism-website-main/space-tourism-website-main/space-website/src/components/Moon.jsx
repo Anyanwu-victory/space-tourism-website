@@ -31,7 +31,8 @@ function mapDataToArray(data) {
             <div key={index} className="w-full h-full  top-0 left-0" style={{ transform: 
             `translateX(${index * 100}%)` }}>
               <img src={moon} className="
-               block w-[200px] h-[200px] object-cover lg:w-[400px] lg:h-[400px] lg:ml-[7rem] lg:mt-[3rem] lg:mr-[9rem]" alt={slide[0].name} />             
+               block w-[200px] h-[200px] object-cover lg:w-[400px] lg:h-[400px] lg:ml-[7rem]
+                lg:mt-[3rem] lg:mr-[9rem]" alt={slide[0].name} />             
             </div>
           ))}
         </div>
@@ -50,10 +51,10 @@ function mapDataToArray(data) {
 
       </div>
       
-      <div className='text-white  mt-[-10px] lg:text-start lg:mt-[1rem] '>
+      <div className='text-white  mt-[-10px] lg:text-start lg:mt-[1rem]  '>
 
-      <div className=" z-30  justify-center space-x-6 rtl:space-x-reverse bottom-10
-         left-1/2 -translate-x-1/2 lg:ml-[22rem] lg:mb-[1rem] hidden lg:block">
+      <div className=" z-30 justify-center space-x-6 rtl:space-x-reverse bottom-10
+         left-1/2 -translate-x-1/2 lg:ml-[17rem] lg:mb-[1rem] hidden lg:block">
           {[...Array(4).keys()].map((index) => (
             <button
               key={index}
@@ -64,21 +65,24 @@ function mapDataToArray(data) {
             />
           ))}
         </div>
-      
-        <h1 className=" text-white text-center text-[90px] font-[bellefair] 
-        text-400 uppercase  lg:text-start lg:pl-[5rem]">MOON </h1>
-        <p className="font-[barlow] text-[2,kl0px] text-center 
-        leading-[32px] mx-[2rem] font-thin pt-[-20px]
-         lg:text-[22px] lg:text-start lg:mx-[5rem] ">
+        {/* for desktop */}
+      <div className='lg:w-[700px] lg:text-start lg:px-[1.5rem]'>
+        
+      <h1 className=" text-white text-center text-[90px] font-[bellefair] 
+        text-400 uppercase  lg:text-start lg:pl-[1.6rem]">moon </h1>
+
+        <p className="font-[barlow] text-[20px] text-center 
+        leading-[38px] mx-[2rem] font-thin pt-[-20px]
+         lg:text-[22px] lg:text-start">
         See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
         regain perspective and come back refreshed. While you’re there, take in some history 
         by visiting the Luna 2 and Apollo 11 landing sites.
         </p>
 
         <hr className='my-[3rem] mx-[2.5rem] fill-[#383B4B] text-[#383B4B] 
-        h-3 lg:text-start lg:mx-[5rem]'/>
+        h-3 lg:text-start lg:mx-[2rem]'/>
       
-       <div className='lg:text-start lg:flex lg:pl-[3rem]'> 
+       <div className='lg:text-start lg:flex lg:pl-[0.3rem]'> 
          
           <p className="font-[bellefair] text-[50px] text-center 
            leading-[32px] mx-[2rem]  pt-[20px] uppercase">
@@ -91,6 +95,7 @@ function mapDataToArray(data) {
           3  days
           </p> 
         </div>
+      </div>
       </div>
 </>
 
@@ -108,7 +113,7 @@ const Moon = ({data}) => {
         <Navbar />
       </div>
 
-      <div className='max-h-screen max-w-full relative flex justify-center  '>
+      <div className='max-h-screen max-w-full relative flex justify-center lg:overflow-hidden lg:h-screen  '>
         <div className='absolute pt-[190px] lg:flex' >
         <Carousel className=''/>
         </div>

@@ -69,32 +69,43 @@ const Navbar = () => {
              h-[50rem] flex-col p-4 items-center md:p-0 mt-4 
              md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 
              lg:bg-[rgba(246,242,242,0.14)] lg:w-[47rem] lg:h-[5rem] lg:mx-[-9rem] lg:py-[1.5rem] lg:px-[5rem]">
-              <li className="">
-                <a
+                {/* Home page  */}
+             <div className=" lg:hover:border-b-4 border-spacing-y-[20px] border-b-white lg:h-[inherit] lg:pt-[1.8rem]">  
+               <li className="">
+                  <a
                   href="#"
-                  className="block py-2 px-3 text-white rounded md:bg-transparent md:text-white md:p-0 lg:text-white lg:hover:border-b-4 border-spacing-y-[20px] border-b-white"
+                  className="block py-2 px-3 text-white rounded md:bg-transparent md:text-white md:p-0
+                   lg:text-white"
                   aria-current="page"
                 >
-                <Link to='/'>00 Home</Link>
-                </a>
-              </li>
+                  <Link to='/'>00 Home</Link>
+                  </a>
+                 </li>
+              </div>
 
-              {/* Destination */}
+
+              {/* Destination Page ends here*/}
+              <div className="lg:hover:border-b-4 border-spacing-y-[20px] border-b-white lg:h-[inherit] lg:pt-[1.8rem]"
+              onMouseEnter={toggleDestination}
+              onMouseLeave={toggleDestination}
+
+              >
+                
               <li
-                onMouseEnter={toggleDestination}
-                onMouseLeave={toggleDestination}
-                className="relative"
+                
+                className="relative "
               >
                 <a
                   href="#"
-                  className="block py-2 px-3 text-white rounded md:bg-transparent md:text-white md:p-0 lg:hover:border-b-4 lg:hover:border-b-white"
+                  className="block py-2 px-3 text-white rounded md:bg-transparent md:text-white md:p-0"
                 >
                   01 Destination
                 </a>
                 {/* Dropdown */}
                 {isDestinationOpen && (
-                  <div className="absolute z-10 text-white top-full left-0 w-[130%] md:left-auto md:top-auto md:w-auto
-                   bg-[#000000] rounded-lg shadow-md mt-1 md:mt-0 lg:w-[150%]">
+                  <div className="absolute z-10 text-black top-full left-0 w-[130%]
+                   md:left-auto md:top-auto md:w-auto bg-black
+                   lg:bg-transparent rounded-lg shadow-lg mt-1 md:mt-5 lg:w-[150%]">
                     <ul className="py-2">
                       <li className="px-4 py-2">
                         <a href="#" className="text-white">
@@ -126,21 +137,30 @@ const Navbar = () => {
                   </div>
                 )}
               </li>
-              {/* crew */}
+              </div>
+              {/* Destination Page Ends here  */}
+
+              {/* crew page begins here */}
+              <div className="lg:hover:border-b-4 border-spacing-y-[20px]
+               border-b-white lg:h-[inherit] lg:pt-[1.8rem]"
+               onMouseEnter={toggleCrew}
+               onMouseLeave={toggleCrew}
+               >
               <li
-              onMouseEnter={toggleCrew}
-              onMouseLeave={toggleCrew}
+              
               className="relative">
                 <a
                   href="#"
-                  className="block py-2 px-3 text-white rounded md:bg-transparent md:text-white md:p-0 lg:hover:border-b-4 lg:hover:border-b-white"
+                  className="block py-2 px-3 text-white rounded
+                   md:bg-transparent md:text-white md:p-0 "
                 >
                   02 Crew
                 </a>
                 {/* DropDown */}
                 {isCrewOpen && (
-                  <div className="absolute z-10 text-white top-full left-0 w-[200%] md:left-auto md:top-auto md:w-auto
-                   bg-[#000000] rounded-lg shadow-md mt-1 md:mt-0 lg:w-[350%]">
+                  <div className="absolute z-10 text-white top-full left-0 w-[200%]
+                   md:left-auto md:top-auto md:w-auto bg-[#000000]
+                   lg:bg-transparent rounded-lg shadow-xl mt-1 md:mt-5 lg:w-[350%]">
                     <ul className="py-2">
                       <li className="px-4 py-2">
                         <a href="#" className="text-white">
@@ -172,17 +192,23 @@ const Navbar = () => {
                   </div>
                 )}
               </li>
-
-                 {/* Technology */}
-              <li
+              </div>
+              {/* Crew page Ends here  */}
+              
+              {/* Technology Begins Here */}
+              <div className="lg:hover:border-b-4 border-spacing-y-[20px]
+               border-b-white lg:h-[inherit] lg:pt-[1.8rem]"
                onMouseEnter={toggleTechnology}
                onMouseLeave={toggleTechnology}
+               > 
+              <li
+               
               >
                 <a
                  
                   href="#"
                   className="block py-2 px-3 text-white rounded md:bg-transparent md:text-white
-                   md:p-0 lg:hover:border-b-4 lg:hover:border-b-white"
+                   md:p-0 "
                 >
                   03 Technology
                 </a>
@@ -190,7 +216,7 @@ const Navbar = () => {
                 {isTechnologyOpen && (
                   <div className="absolute z-10 text-white top-full left-0 w-[130%]
                    md:left-auto md:top-auto md:w-auto
-                   bg-[#000000] rounded-lg shadow-md mt-1 md:mt-0 lg:w-[20%]">
+                   bg-[#000000] lg:bg-transparent rounded-lg shadow-xl mt-1 md:mt-5 lg:w-[20%]">
                     <ul className="py-2">
                       <li className="px-4 py-2">
                         <a href="#" className="text-white">
@@ -205,23 +231,22 @@ const Navbar = () => {
                       </li>
                       <li className="px-4 py-2 hover:bg-[#f9d1d123]">
                         <a href="#" className="text-white">
-                         <Link to='/mars'>Mars</Link>
+                         <Link to='/port'>SpacePort</Link>
                         </a>
                       </li>
                       <li className="px-4 py-2 hover:bg-[#f9d1d123]">
-                        <a href="#" className="text-white">
-                         <Link to='/europa' >Europa</Link>
+                        <a href="#" className="text-">
+                         <Link to='/Capsule' >Space Capsule</Link>
                         </a>
                       </li>
-                      <li className="px-4 py-2 hover:bg-[#f9d1d123]">
-                        <a href="#" className="text-white">
-                          <Link to='/titan'>Titan</Link>
-                        </a>
-                      </li>
+                     
                     </ul>
                   </div>
                 )}
               </li>
+              </div> 
+
+              {/* Technology Page Ends Here  */}
             </ul>
           </div>
         </div>
