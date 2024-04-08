@@ -1,5 +1,5 @@
 import React from 'react'
-import {Navbar, About, Moon, Mars} from '../components'
+import {Navbar, About} from '../components'
 
 const Home = () => {
   return (

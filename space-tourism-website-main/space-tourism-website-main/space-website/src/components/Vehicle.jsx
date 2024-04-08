@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState} from 'react';
 import vehicle from '../assets/technology/image-launch-vehicle-landscape.jpg';
 import vehicle1 from '../assets/technology/image-launch-vehicle-portrait.jpg';
 import Navbar from "./Navbar";
@@ -7,7 +7,7 @@ import mobilebg from "../assets/technology/background-technology-mobile.jpg";
 import tabletbg from "../assets/technology/background-technology-tablet.jpg";
 
 const Vehicle = () => {
-    const [currentSlide, setCurrentSlide] = useState(0);
+    const [currentSlide] = useState(0);
     
     return (
       <>

@@ -5,11 +5,17 @@ import mobilebg from '../assets/destination/background-destination-mobile.jpg';
 import tabletbg from '../assets/destination/background-destination-tablet.jpg';
 import Navbar from './Navbar';
 import SpaceData from '../db/data.json';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 const  Carousel = ()  => { 
-  
+
+  useEffect (() => {
+    AOS.init();
+  },[]);
+   
 function mapDataToArray(data) {
   try {
     return Object.keys(data).map((key) => data[key]);
@@ -20,7 +26,7 @@ function mapDataToArray(data) {
 }
 
     const Feed = mapDataToArray(SpaceData);
-    const [currentSlide, setCurrentSlide] = useState(0);
+    const [currentSlide] = useState(0);
    
     return (
 <>
@@ -29,10 +35,16 @@ function mapDataToArray(data) {
         <div className=" h-[304px] overflow-hidden md:h-[680px]">
           {Feed.map((slide, index) => (
             <div key={index} className="w-full h-full  top-0 left-0" style={{ transform: 
-            `translateX(${index * 100}%)` }}>
+            `translateX(${index * 100}%)` }}
+           
+            >
               <img src={moon} className="
                block w-[200px] h-[200px] object-cover lg:w-[400px] lg:h-[400px] lg:ml-[7rem]
-                lg:mt-[3rem] lg:mr-[9rem]" alt={slide[0].name} />             
+                lg:mt-[3rem] lg:mr-[9rem]" alt={slide[0].name}
+                data-aos="fade-up"
+                data-aos-duration="1200" 
+                data-aos-easing="ease-in-sine"
+               />             
             </div>
           ))}
         </div>
@@ -106,7 +118,8 @@ function mapDataToArray(data) {
   
 
 const Moon = ({data}) => {
-   
+
+  
   return (
     <>
       <div>

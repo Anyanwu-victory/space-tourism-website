@@ -6,12 +6,15 @@ import tabletbg from '../assets/destination/background-destination-tablet.jpg';
 import Navbar from './Navbar';
 import { getDestination } from '../fetcher';
 import SpaceData from '../db/data.json';
-
-  
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const  Carousel = ()  => { 
+
+  useEffect (() => {
+    AOS.init();
+  },[]);
   
   function mapDataToArray(data) {
     try {
@@ -23,7 +26,7 @@ const  Carousel = ()  => {
   }
   
       const Feed = mapDataToArray(SpaceData);
-      const [currentSlide, setCurrentSlide] = useState(3);
+      const [currentSlide] = useState(3);
      
       return (
   <>
@@ -35,7 +38,11 @@ const  Carousel = ()  => {
               `translateX(${index * 100}%)` }}>
                 <img src={titan} className="
                  block w-[200px] h-[200px] object-cover lg:w-[400px] lg:h-[400px] lg:ml-[7rem]
-                  lg:mt-[3rem] lg:mr-[9rem]" alt={slide[0].name} />             
+                  lg:mt-[3rem] lg:mr-[9rem]" alt={slide[0].name}
+                  data-aos="fade-up"
+                  data-aos-duration="1200" 
+                  data-aos-easing="ease-in-sine"
+                  />             
               </div>
             ))}
           </div>

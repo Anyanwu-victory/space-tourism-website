@@ -226,17 +226,17 @@ const Navbar = () => {
                       <hr className="pb-3 mt-2 mx-2" />
                       <li className="px-4 py-2 hover:bg-[#a4949423]">
                         <a href="#" className="text-white">
-                          <Link to='/vehicle' >Space Vehicle </Link>
+                          <Link to='/vehicle' >Space Vehicle</Link>
                         </a>
                       </li>
                       <li className="px-4 py-2 hover:bg-[#f9d1d123]">
                         <a href="#" className="text-white">
-                         <Link to='/port'>SpacePort</Link>
+                         <Link to='/port'>SpacePort 101</Link>
                         </a>
                       </li>
                       <li className="px-4 py-2 hover:bg-[#f9d1d123] ">
                         <a href="#" className="text-white">
-                         <Link to='/Capsule' >Space Capsule</Link>
+                         <Link to='/Capsule' >Space Capsule </Link>
                         </a>
                       </li>
                      
