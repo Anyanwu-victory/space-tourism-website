@@ -75,7 +75,7 @@ const Navbar = () => {
                   <a
                   href="#"
                   className="block py-2 px-3 text-white rounded md:bg-transparent md:text-white md:p-0
-                   lg:text-white"
+                   lg:text-white uppercase"
                   aria-current="page"
                 >
                   <Link to='/'>00 Home</Link>
@@ -97,7 +97,7 @@ const Navbar = () => {
               >
                 <a
                   href="#"
-                  className="block py-2 px-3 text-white rounded md:bg-transparent md:text-white md:p-0"
+                  className="block py-2 px-3 text-white uppercase rounded md:bg-transparent md:text-white md:p-0"
                 >
                   01 Destination
                 </a>
@@ -152,7 +152,7 @@ const Navbar = () => {
                 <a
                   href="#"
                   className="block py-2 px-3 text-white rounded
-                   md:bg-transparent md:text-white md:p-0 "
+                   md:bg-transparent uppercase md:text-white md:p-0 "
                 >
                   02 Crew
                 </a>
@@ -207,7 +207,7 @@ const Navbar = () => {
                 <a
                  
                   href="#"
-                  className="block py-2 px-3 text-white rounded md:bg-transparent md:text-white
+                  className="block py-2 px-3 uppercase text-white rounded md:bg-transparent md:text-white
                    md:p-0 "
                 >
                   03 Technology

@@ -26,7 +26,8 @@ const About = () => {
 
       <div className="absolute mt-[-37rem]  text-white lg:flex ">
         <div className="lg:mt-[3rem] lg:pl-[9rem] lg:ml-[-2rem] lg:text-start">
-          <p className="hidden lg:hidden">So, you want to travel to</p>
+          <p className="hidden lg:block lg:pl-[3rem] font-[barlow] text-[25px] 
+           font-thin uppercase">So, you want to travel to</p>
           <h1
             className=" text-white text-center text-[97px] font-[bellefair]
          text-400 lg:text-300 lg:text-[130px] lg:text-start lg:pl-[2rem]"
