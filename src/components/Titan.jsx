@@ -4,7 +4,6 @@ import desktopbg from '../assets/destination/background-destination-desktop.jpg'
 import mobilebg from '../assets/destination/background-destination-mobile.jpg';
 import tabletbg from '../assets/destination/background-destination-tablet.jpg';
 import Navbar from './Navbar';
-import { getDestination } from '../fetcher';
 import SpaceData from '../db/data.json';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
