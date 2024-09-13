@@ -66,7 +66,7 @@ const Navbar = () => {
             id="navbar-hamburger"
           >
             <ul className="font-medium bg-[rgba(0,0,0,0.6)] flex ml-[10rem]
-             h-[50rem] flex-col p-4 items-center md:p-0 mt-4 
+             h-[50rem] flex-col p-4 items-center md:p-0 mt-4 md:h-[3rem] md:bg-[rgba(0,0,0,0)]
              md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 
              lg:bg-[rgba(246,242,242,0.14)] lg:w-[47rem] lg:h-[5rem] lg:mx-[-9rem] lg:py-[1.5rem] lg:px-[5rem]">
                 {/* Home page  */}
