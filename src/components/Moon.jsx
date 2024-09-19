@@ -132,7 +132,7 @@ const Moon = ({data}) => {
         </div>
         
         <img src={desktopbg} className='hidden object-cover w-full h-full lg:block' alt="Desktop background"/>
-        <img src={mobilebg} className="object-cover w-full h-full lg:hidden  " alt="Mobile background"/>
+        <img src={mobilebg} className="object-cover w-full h-[80rem] sm:h-screen lg:hidden  " alt="Mobile background"/>
         <img src={tabletbg}  className="object-cover w-full h-full lg:hidden hidden md:block" alt="Tablet background"/>
       </div>
 

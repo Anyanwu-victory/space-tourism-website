@@ -14,7 +14,7 @@ const About = () => {
         />
         <img
           src={mobilebg}
-          className="object-cover w-full h-full lg:hidden "
+          className="object-cover w-full h-[70rem] sm:h-screen lg:hidden "
           alt="Mobile background"
         />
         <img
@@ -36,11 +36,12 @@ const About = () => {
           </h1>
 
           <p
-            className="font-[barlow] text-[20px] text-center leading-[38px] mx-[2rem]
+            className="font-[barlow] text-[20px] text-center 
+            leading-[38px] mx-[2rem]
              font-thin pt-[15px] 
-             lg:text-start lg:pr-[32rem]"
+             lg:text-start lg:pr-[32rem] sm:text-center "
           >
-            Let’s face it; if you want to go to space, you might as well
+            Let’s face it; if you want to go to space, you might  as well
             genuinely go to outer space and not hover kind of on the edge of it.
             Well sit back, and relax because we’ll give you a truly out of this
             world experience!
@@ -53,7 +54,8 @@ const About = () => {
            lg:h-[200px] lg:mx-0 lg:rounded-full lg:mt-[14rem] 
            lg:mr-[10rem] lg:px-[3rem]"
         >
-          <h3 className="text-[#000000] text-center text-2xl font-[bellefair]">
+          <h3 className="text-[#000000] text-center text-2xl 
+          font-[bellefair]">
             EXPLORE
           </h3>
         </div>
